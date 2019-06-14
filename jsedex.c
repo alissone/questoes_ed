@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+main() { int a,b,c;
+scanf("%d %d %d",&a,&b,&c);
+printf("%d",((a>b && a<c)||(a>c && a<b)) ? a : ((b>a && b<c)||(b>c && b<a)) ? b : c);
+}
